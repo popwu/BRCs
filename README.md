@@ -1,145 +1,145 @@
-# BRC: Bitcoin Request for Comments
+# BRC：比特币请求评论
 
-A repository for submitting, discussing, sharing, and indexing technical proposals for use across the Bitcoin ecosystem. Data models, user interfaces, script templates, encoding formats, communication protocols, and constructive critique of existing industry practice are all welcome. The goal is to provide a platform for sharing ideas without any bureaucratic overhead.
+一个用于提交、讨论、分享和索引比特币生态系统中技术提案的存储库。数据模型、用户界面、脚本模板、编码格式、通信协议以及对现有行业实践的建设性批评都欢迎。目标是提供一个没有官僚主义负担的平台来分享想法。
 
-## Contributing
+## 贡献
 
-Contributions from all builders are welcome and encouraged. To propose a new BRC, fork the repo and create a new markdown file using the [~EXAMPLE.md](./~EXAMPLE.md) as the template. The common structure is outlined below, which is a guideline to aid you rather than a strict requirement. Once your proposal is ready to share, submit a pull request so that others can review and discuss it.
+欢迎并鼓励所有建设者的贡献。要提出新的 BRC，请 fork 这个仓库并使用 [~EXAMPLE.md](./~EXAMPLE.md) 作为模板创建一个新的 markdown 文件。下面概述了一个通用结构，这只是一个指导而不是严格的要求。一旦你的提案准备好分享，请提交一个 pull request 以便其他人可以审查和讨论。
 
-To participate in discussions about existing proposals, simply open an issue and link back to the BRC file in question.
+要参与现有提案的讨论，只需打开一个 issue 并链接到相关的 BRC 文件。
 
-## Iterative improvement
+## 迭代改进
 
-We believe in encouraging discussion and iterative improvement of proposals, resulting in incremental improvement within the bounds of the Bitcoin protocol. We welcome suggestions for improvement and are committed to working with contributors to improve proposals and ensure that they align with our guidelines.
+我们相信鼓励讨论和提案的迭代改进，从而在比特币协议的范围内实现增量改进。我们欢迎改进建议，并致力于与贡献者合作改进提案，确保它们符合我们的指南。
 
-**Note** that substantial revisions to standards (beyond fixing typos, adding context or wording) should go into a new standard that extends or revises the old one, so as not to disrupt existing implementations.
+**注意**，对标准的重大修订（超出修正错别字、添加上下文或措辞）应进入一个新的标准，该标准扩展或修订旧标准，以免破坏现有实现。
 
-We look forward to your contributions and helping to create a world where transactions are seamlessly formed, and applications interact with each other with ease.
+我们期待你的贡献，并帮助创建一个交易无缝形成、应用程序相互轻松交互的世界。
 
-Read more about areas of interest on [OpenStandards.cash](https://openstandards.cash)
+阅读更多关于兴趣领域的信息，请访问 [OpenStandards.cash](https://openstandards.cash)
 
-## Structure
+## 结构
 
-The BRCs repository is organized into directories, each representing a different category of proposal. Categories may include, but are not limited to:
+BRCs 存储库组织成目录，每个目录代表不同类别的提案。类别可能包括但不限于：
 
-- Transaction Templates
-- Bitcoin Script Templates
-- Communication Protocols
+- 交易模板
+- 比特币脚本模板
+- 通信协议
 
-Each proposal should be written as a markdown file and should loosely adhere to the following:
+每个提案应写成一个 markdown 文件，并应大致遵循以下内容：
 
-- **Title:** A descriptive title for the standard being defined.
-- **Author(s):** Who wrote the standard and where did it come from? How can they be reached?
-- **Abstract:** A brief description of the proposed standard or template.
-- **Motivation:** The reasoning behind the proposal and why it is needed.
-- **Specification:** A detailed technical specification of the proposal.
-- **Implementations:** Information on how the proposal has been or can be implemented.
-- **References:** Any relevant literature or external resources related to the proposal.
+- **标题：** 定义标准的描述性标题。
+- **作者：** 谁写了这个标准，它来自哪里？如何联系他们？
+- **摘要：** 对所提标准或模板的简要描述。
+- **动机：** 提案背后的原因及其必要性。
+- **规范：** 提案的详细技术规范。
+- **实现：** 关于提案如何实现或已实现的信息。
+- **参考文献：** 与提案相关的任何文献或外部资源。
 
-**Note** that additional relevant content, identifiers or other information may be added to the document. Documents that already existed before the repository may not follow these requirements.
+**注意**，可以在文档中添加其他相关内容、标识符或其他信息。存储库中已存在的文档可能不遵循这些要求。
 
-Things that help depict and understand the document, such as media, may also be added in a media subdirectory where appropriate.
+有助于描述和理解文档的内容，如媒体，也可以在适当的情况下添加到媒体子目录中。
 
-Refer to the [Banana-Powered Bitcoin Wallet Control Protocol](./~EXAMPLE.md) for a fun example template you can copy when proposing your own standards.
+请参考 [Banana-Powered Bitcoin Wallet Control Protocol](./~EXAMPLE.md) 作为一个有趣的示例模板，当你提出自己的标准时可以复制。
 
-## Standards
+## 标准
 
-BRC | Standard
+BRC | 标准
 -----|------------------
-0    | [Banana-Powered Bitcoin Wallet Control Protocol](./EXAMPLE.md)
-1    | [Transaction Creation](./wallet/0001.md)
-2    | [Data Encryption and Decryption](./wallet/0002.md)
-3    | [Digital Signature Creation and Verification](./wallet/0003.md)
-4    | [Input Redemption](./wallet/0004.md)
-5    | [HTTP Wallet Communications Substrate](./wallet/0005.md)
-6    | [XDM Wallet Communications Substrate](./wallet/0006.md)
-7    | [Window Wallet Communication Substrate](./wallet/0007.md)
-8    | [Everett-style Transaction Envelopes](./transactions/0008.md)
-9    | [Simplified Payment Verification](./transactions/0009.md)
-10   | [Merkle proof standardised format](./transactions/0010.md)
-11   | [TSC Proof Format with Heights](./transactions/0011.md)
-12   | [Raw Transaction Format](./transactions/0012.md)
-13   | [TXO Transaction Object Format](./transactions/0013.md)
-14   | [Bitcoin Script Binary, Hex and ASM Formats](./scripts/0014.md)
-15   | [Bitcoin Script Assembly Language](./scripts/0015.md)
-16   | [Pay to Public Key Hash](./scripts/0016.md)
-17   | [Pay to R Puzzle Hash](./scripts/0017.md)
-18   | [Pay to False Return](./scripts/0018.md)
-19   | [Pay to True Return](./scripts/0019.md)
-20   | [There is no BRC-20](./tokens/0020.md)
-21   | [Push TX](./scripts/0021.md)
-22   | [Overlay Network Data Synchronization](./overlays/0022.md)
-23   | [Confederacy Host Interconnect Protocol (CHIP)](./overlays/0023.md)
-24   | [Overlay Network Lookup Services](./overlays/0024.md)
-25   | [Confederacy Lookup Availability Protocol (CLAP)](./overlays/0025.md)
-26   | [Universal Hash Resolution Protocol](./overlays/0026.md)
-27   | [Direct Payment Protocol (DPP)](./payments/0027.md)
-28   | [Paymail Payment Destinations](./payments/0028.md)
-29   | [Simple Authenticated BSV P2PKH Payment Protocol](./payments/0029.md)
-30   | [Transaction Extended Format (EF)](./transactions/0030.md)
-31   | [Authrite Mutual Authentication](./peer-to-peer/0031.md)
-32   | [BIP32 Key Derivation Scheme](./key-derivation/0032.md)
-33   | [PeerServ Message Relay Interface](./peer-to-peer/0033.md)
-34   | [PeerServ Host Interconnect Protocol](./peer-to-peer/0034.md)
-35   | (unused, will assign next BRC to this number)
-36   | [Format for Bitcoin Outpoints](./outpoints/0036.md)
-37   | [Spending Instructions Extension for UTXO Storage Format](./outpoints/0037.md)
-38   | User Wallet Data Format
-39   | User Wallet Data Format Encryption Extension
-40   | User Wallet Data Synchronization
-41   | [PacketPay HTTP Payment Mechanism](./payments/0041.md)
-42   | [BSV Key Derivation Scheme (BKDS)](./key-derivation/0042.md)
-43   | [Security Levels, Protocol IDs, Key IDs and Counterparties](./key-derivation/0043.md)
-44   | [Admin-reserved and Prohibited Key Derivation Protocols](./key-derivation/0044.md)
-45   | [Definition of UTXOs as Bitcoin Tokens](./tokens/0045.md)
-46   | [Wallet Transaction Output Tracking (Output Baskets)](./wallet/0046.md)
-47   | [Bare Multi-Signature](./scripts/0047.md)
-48   | [Pay to Push Drop](./scripts/0048.md)
-49   | [Users should never see an address](./opinions/0049.md)
-50   | [Submitting Received Payments to a Wallet](./wallet/0050.md)
-51   | [List of user experiences](./opinions/0051.md)
-52   | [Identity Certificates](./peer-to-peer/0052.md)
-53   | [Certificate Creation and Revelation](./wallet/0053.md)
-54   | [Hybrid Payment Mode for DPP](./payments/0054.md)
-55   | [HTTPS Transport Mechanism for DPP](./payments/0055.md)
-56   | [Unified Abstract Wallet-to-Application Messaging Layer](./wallet/0056.md)
-57   | [Legitimate Uses for mAPI](./opinions/0057.md)
-58   | [Merkle Path JSON format](./transactions/0058.md)
-59   | [Security and Scalability Benefits of UTXO-based Overlay Networks](./opinions/0059.md)
-60   | [Simplifying State Machine Event Chains in Bitcoin](./state-machines/0060.md)
-61   | [Compound Merkle Path Format](./transactions/0061.md)
-62   | [Background Evaluation Extended Format (BEEF) Transactions](./transactions/0062.md)
-63   | [Genealogical Identity Protocol](./peer-to-peer/0063.md)
-64   | [Overlay Network Transaction History Tracking](./overlays/0064.md)
-65   | [Transaction Labels and List Actions](./wallet/0065.md)
-66   | [Output Basket Removal and Certificate Deletion](./wallet/0066.md)
-67   | [Simplified Payment Verification](./transactions/0067.md)
-68   | [Publishing Trust Anchor Details at an Internet Domain](./peer-to-peer/0068.md)
-69   | [Revealing Key Linkages](./key-derivation/0069.md)
-70   | [Paymail BEEF Transaction](./payments/0070.md)
-71   | [Merkle Path Binary Format](./transactions/0071.md)
-72   | [Protecting BRC-69 Key Linkage Information in Transit](./key-derivation/0072.md)
-73   | [Group Permissions for App Access](./wallet/0073.md)
-74   | [BSV Unified Merkle Path (BUMP) Format](./transactions/0074.md)
-75   | [Mnemonic For Master Private Key](./key-derivation/0075.md)
-76   | [Graph Aware Sync Protocol](./transactions/0076.md)
-77   | [Message Signature Creation and Verification](./peer-to-peer/0077.md)
-78   | [Serialization Format for Portable Encrypted Messages](./peer-to-peer/0078.md)
-79   | [Token Exchange Protocol for UTXO-based Overlay Networks](./tokens/0079.md)
-80   | [Improving on MLD for BSV Multicast Services](./opinions/0080.md)
-81   | [Private Overlays with P2PKH Transactions](./overlays/0081.md)
-82   | [Defining a Scalable IPv6 Multicast Protocol for Blockchain Transaction Broadcast and Update Delivery](./peer-to-peer/0082.md)
-83   | [Scalable Transaction Processing in the BSV Network](./transactions/0083.md)
-84   | [Linked Key Derivation Scheme](./key-derivation/0084.md)
-85   | [Proven Identity Key Exchange (PIKE)](./peer-to-peer/0085.md)
-86   | [Bidirectionally Authenticated Derivation of Privacy Restricted Type 42 Keys](./key-derivation/0086.md)
-87   | [Standardized Naming Conventions for BRC-22 Topic Managers and BRC-24 Lookup Services](./overlays/0087.md)
-88   | [Overlay Services Synchronization Architecture](./overlays/0088.md)
-89   | [Web 3.0 Standard (at a high level)](./opinions/0089.md)
-90   | [Thoughts on the Mandala Network](./opinions/0090.md)
-91   | [Outputs, Overlays, and Scripts in the Mandala Network](./opinions/0091.md)
-92   | [Mandala Token Protocol](./tokens/0092.md)
+0    | [香蕉动力比特币钱包控制协议](./EXAMPLE.md)
+1    | [交易创建](./wallet/0001.md)
+2    | [数据加密和解密](./wallet/0002.md)
+3    | [数字签名创建和验证](./wallet/0003.md)
+4    | [输入赎回](./wallet/0004.md)
+5    | [HTTP 钱包通信基质](./wallet/0005.md)
+6    | [XDM 钱包通信基质](./wallet/0006.md)
+7    | [窗口钱包通信基质](./wallet/0007.md)
+8    | [Everett 风格交易信封](./transactions/0008.md)
+9    | [简化支付验证](./transactions/0009.md)
+10   | [默克尔证明标准化格式](./transactions/0010.md)
+11   | [带高度的 TSC 证明格式](./transactions/0011.md)
+12   | [原始交易格式](./transactions/0012.md)
+13   | [TXO 交易对象格式](./transactions/0013.md)
+14   | [比特币脚本二进制、十六进制和 ASM 格式](./scripts/0014.md)
+15   | [比特币脚本汇编语言](./scripts/0015.md)
+16   | [支付到公钥哈希](./scripts/0016.md)
+17   | [支付到 R 谜题哈希](./scripts/0017.md)
+18   | [支付到假返回](./scripts/0018.md)
+19   | [支付到真返回](./scripts/0019.md)
+20   | [没有 BRC-20](./tokens/0020.md)
+21   | [推送交易](./scripts/0021.md)
+22   | [覆盖网络数据同步](./overlays/0022.md)
+23   | [联盟主机互连协议 (CHIP)](./overlays/0023.md)
+24   | [覆盖网络查找服务](./overlays/0024.md)
+25   | [联盟查找可用性协议 (CLAP)](./overlays/0025.md)
+26   | [通用哈希解析协议](./overlays/0026.md)
+27   | [直接支付协议 (DPP)](./payments/0027.md)
+28   | [Paymail 支付目的地](./payments/0028.md)
+29   | [简单认证的 BSV P2PKH 支付协议](./payments/0029.md)
+30   | [交易扩展格式 (EF)](./transactions/0030.md)
+31   | [Authrite 相互认证](./peer-to-peer/0031.md)
+32   | [BIP32 密钥派生方案](./key-derivation/0032.md)
+33   | [PeerServ 消息中继接口](./peer-to-peer/0033.md)
+34   | [PeerServ 主机互连协议](./peer-to-peer/0034.md)
+35   | （未使用，将分配下一个 BRC 到此编号）
+36   | [比特币输出点格式](./outpoints/0036.md)
+37   | [UTXO 存储格式的支出指令扩展](./outpoints/0037.md)
+38   | 用户钱包数据格式
+39   | 用户钱包数据格式加密扩展
+40   | 用户钱包数据同步
+41   | [PacketPay HTTP 支付机制](./payments/0041.md)
+42   | [BSV 密钥派生方案 (BKDS)](./key-derivation/0042.md)
+43   | [安全级别、协议 ID、密钥 ID 和对手方](./key-derivation/0043.md)
+44   | [管理员保留和禁止的密钥派生协议](./key-derivation/0044.md)
+45   | [将 UTXO 定义为比特币代币](./tokens/0045.md)
+46   | [钱包交易输出跟踪（输出篮子）](./wallet/0046.md)
+47   | [裸多重签名](./scripts/0047.md)
+48   | [支付到推送丢弃](./scripts/0048.md)
+49   | [用户不应看到地址](./opinions/0049.md)
+50   | [提交收到的付款到钱包](./wallet/0050.md)
+51   | [用户体验列表](./opinions/0051.md)
+52   | [身份证书](./peer-to-peer/0052.md)
+53   | [证书创建和揭示](./wallet/0053.md)
+54   | [DPP 的混合支付模式](./payments/0054.md)
+55   | [DPP 的 HTTPS 传输机制](./payments/0055.md)
+56   | [统一抽象钱包到应用程序消息层](./wallet/0056.md)
+57   | [mAPI 的合法用途](./opinions/0057.md)
+58   | [默克尔路径 JSON 格式](./transactions/0058.md)
+59   | [基于 UTXO 的覆盖网络的安全性和可扩展性优势](./opinions/0059.md)
+60   | [简化比特币中的状态机事件链](./state-machines/0060.md)
+61   | [复合默克尔路径格式](./transactions/0061.md)
+62   | [背景评估扩展格式 (BEEF) 交易](./transactions/0062.md)
+63   | [家谱身份协议](./peer-to-peer/0063.md)
+64   | [覆盖网络交易历史跟踪](./overlays/0064.md)
+65   | [交易标签和列表操作](./wallet/0065.md)
+66   | [输出篮子移除和证书删除](./wallet/0066.md)
+67   | [简化支付验证](./transactions/0067.md)
+68   | [在互联网域上发布信任锚详细信息](./peer-to-peer/0068.md)
+69   | [揭示密钥链接](./key-derivation/0069.md)
+70   | [Paymail BEEF 交易](./payments/0070.md)
+71   | [默克尔路径二进制格式](./transactions/0071.md)
+72   | [在传输中保护 BRC-69 密钥链接信息](./key-derivation/0072.md)
+73   | [应用访问的组权限](./wallet/0073.md)
+74   | [BSV 统一默克尔路径 (BUMP) 格式](./transactions/0074.md)
+75   | [主私钥的助记符](./key-derivation/0075.md)
+76   | [图感知同步协议](./transactions/0076.md)
+77   | [消息签名创建和验证](./peer-to-peer/0077.md)
+78   | [便携式加密消息的序列化格式](./peer-to-peer/0078.md)
+79   | [基于 UTXO 的覆盖网络的代币交换协议](./tokens/0079.md)
+80   | [改进 BSV 多播服务的 MLD](./opinions/0080.md)
+81   | [使用 P2PKH 交易的私有覆盖](./overlays/0081.md)
+82   | [定义可扩展的 IPv6 多播协议，用于区块链交易广播和更新传递](./peer-to-peer/0082.md)
+83   | [BSV 网络中的可扩展交易处理](./transactions/0083.md)
+84   | [链接密钥派生方案](./key-derivation/0084.md)
+85   | [验证身份密钥交换 (PIKE)](./peer-to-peer/0085.md)
+86   | [双向认证的隐私受限类型 42 密钥派生](./key-derivation/0086.md)
+87   | [BRC-22 主题管理器和 BRC-24 查找服务的标准化命名约定](./overlays/0087.md)
+88   | [覆盖服务同步架构](./overlays/0088.md)
+89   | [Web 3.0 标准（高级）](./opinions/0089.md)
+90   | [关于曼荼罗网络的思考](./opinions/0090.md)
+91   | [曼荼罗网络中的输出、覆盖和脚本](./opinions/0091.md)
+92   | [曼荼罗代币协议](./tokens/0092.md)
 
-## License
+## 许可证
 
-Everything in this repository is subject to the [Open BSV License](https://github.com/bitcoin-sv/bitcoin-sv/blob/master/LICENSE).
+此存储库中的所有内容均受 [Open BSV License](https://github.com/bitcoin-sv/bitcoin-sv/blob/master/LICENSE) 约束。
